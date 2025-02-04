@@ -39,8 +39,7 @@ fun main() {
     medico1.id = 1
     medico1.nome = "Roberta da Silva"
     medico1.email = "roberta@hospital.com"
-    medico1.especialidades.add("Nutricionista")
-    medico1.especialidades.add("Grastroenterologista")
+    medico1.especialidades.addAll(listOf("Gastroenterologista","Nutricionista"))
     medico1.exibirFichaDoMedico()
 
     //Criar uma consulta
