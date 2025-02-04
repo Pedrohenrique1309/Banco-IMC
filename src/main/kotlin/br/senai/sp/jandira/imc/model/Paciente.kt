@@ -15,24 +15,24 @@ class Paciente {
     var imc:Double= 0.0
     var classificacaoImc:String= ""
 
-    fun calcularImc(){
+    fun calcularImc():Double{
 
         imc = peso / altura.pow(2)
-
+        return imc
     }
 
     fun mostrarDadosBiometricos(){
 
-        println("-------------------------------")
+        println("==============================================")
         println("DADOS DO PACIENTE")
-        println("-------------------------------")
+        println("==============================================")
         println("NOME:${nome}")
         println("PESO:$peso")
         println("ALTURA:$altura")
         println("IMC:$imc")
         println("CLASSIFIÇÃO:$classificacaoImc")
         println("IDADE:${calcularIdade()}")
-        println("-------------------------------")
+        println("==============================================")
 
     }
 

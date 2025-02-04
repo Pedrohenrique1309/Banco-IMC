@@ -8,16 +8,16 @@ class Medico {
     var email:String = ""
 
     fun exibirFichaDoMedico(){
-        println("-----------------")
+        println("==============================================")
         println("FICHA DO MEDICO")
-        println("-----------------")
+        println("==============================================")
         println("NOME: ${nome}")
         println("EMAIL: ${email}")
         println("EPECIALIDADES DO MEDICO:")
         for(especialidade in especialidades){
             println("  -> $especialidade")
         }
-        println("===================")
+        println("==============================================")
     }
 }
 
